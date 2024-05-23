@@ -1,0 +1,51 @@
+body {
+    background-image: url(hello\ word.gif);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+/*logo*/
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+.logoP {
+    animation: rotation 2s linear infinite;
+    height: 13em;
+    width: 11em;
+}
+/*nav*/
+
+ul.sous-menu1, 
+ul.sous-menu2, 
+ul.sous-menu3, 
+ul.sous-menu4 {
+    display: none;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    padding-bottom: -40em;
+    
+}
+
+nav ul li {
+    position: relative;
+    list-style: none;
+}
+
+nav li:hover > ul {
+    padding-top: 5em;
+    display: block;
+    position: absolute;
+}
+
